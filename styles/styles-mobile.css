@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'is';
-    src: url('./asstes/IRANSansXRegular.ttf');
+    src: url('../asstes/IRANSansXRegular.ttf');
 }
 @font-face {
     font-family: 'yel';
-    src: url('./asstes/Yekan.ttf');
+    src: url('../asstes/Yekan.ttf');
 }
 
 html {
@@ -15,8 +15,7 @@ html {
 
 
 body {
-
-    font-family: 'is', sans-serif;
+    font-family: 'is';
     margin: 0;
     padding: 0;
     background: linear-gradient(180deg, #1630dc, #000);

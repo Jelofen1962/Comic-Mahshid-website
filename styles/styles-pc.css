@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'is';
-    src: url('./assets/IRANSansXRegular.ttf');
+    src: url('../assets/IRANSansXRegular.ttf');
 }
 
 @font-face {
     font-family: 'yel';
-    src: url('./assets/Yekan.ttf');
+    src: url('../assets/Yekan.ttf');
 }
 
 html {
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: 'is', sans-serif;
+    font-family: 'is';
     margin: 0;
     padding: 0;
     background: linear-gradient(180deg, #1630dc, #000);
