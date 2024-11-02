@@ -1,0 +1,23 @@
+@font-face {
+    font-family: is;
+    src: url(../asstes/IRANSansXRegular.ttf);
+}
+
+body{
+    font-family: is;
+    color: white;
+    background-color: rgb(39, 37, 37);
+}
+
+body h1{
+    padding-top: 2rem;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body p{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

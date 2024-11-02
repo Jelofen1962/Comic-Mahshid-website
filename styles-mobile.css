@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'is';
+    src: url('./asstes/IRANSansXRegular.ttf');
+}
+@font-face {
+    font-family: 'yel';
+    src: url('./asstes/Yekan.ttf');
+}
+
+html {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+body {
+
+    font-family: 'is', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #1630dc, #000);
+    direction: rtl;
+}
+
+header {
+    background-color: rgba(20, 18, 68, 0.8);
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff8a;
+    margin-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #18359e;
+    box-shadow: 0 0 0px rgb(82, 93, 241);
+    transition: 200ms;
+}
+
+header nav a:hover {
+    background-color: rgb(82, 93, 241);
+    box-shadow: 0 0 10px rgb(82, 93, 241);
+    transform: scale(105%);
+    transition: 200ms;
+
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    animation: glow 1.5s infinite alternate;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: yel;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: #000;
+    border-width: 0.01rem;
+    border-style: dashed;
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.786);
+}
+
+.featured-comic {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.comic-coming-soon {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: 300ms ease;
+}
+
+.featured-comic :hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    transition: 250ms ease;
+}   
+
+.comic-coming-soon img {
+    filter: saturate(0);
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.comic-coming-soon h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+footer {
+    background-color: #000d2d;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #b1beff, 0 0 0px #b1beff, 0 0 30px #b1beff;
+    }
+    to {
+        text-shadow: 0 0 00px rgb(0, 217, 255), 0 0 30px rgb(0, 217, 255), 0 0 40px rgb(0, 217, 255);}}

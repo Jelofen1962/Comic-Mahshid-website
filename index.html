@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به سایت</title>
+    <style>
+        @font-face {
+            font-family: 'is';
+            src: url('./assets/IRANSansXRegular.ttf');
+        }
+        body {
+            font-family: 'is', sans-serif;
+            background: linear-gradient(180deg, #1630dc, #000);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+            text-align: center;
+        }
+        input[type="password"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ffffff;
+            color: #000;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>لطفاً رمز عبور خود را وارد کنید</h1>
+        <input type="password" id="password" placeholder="رمز عبور">
+        <button onclick="checkPassword()">ورود</button>
+        <p id="message" style="color: red;"></p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            if (password === 'webpass') {
+                window.location.href = 'landing.html';
+            } else {
+                document.getElementById('message').innerText = 'رمز عبور اشتباه است!';
+            }
+        }
+    </script>
+</body>
+</html>
