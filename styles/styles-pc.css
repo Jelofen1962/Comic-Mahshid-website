@@ -123,6 +123,13 @@ header nav a:hover {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: 300ms ease;
+}
+
+.featured-comic :hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    transition: 250ms ease;
 }
 
 .comic-coming-soon img {
